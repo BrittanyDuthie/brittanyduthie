@@ -1,27 +1,34 @@
 /* Global Styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f5f5; /* Light neutral background */
-  color: #333; /* Dark text color for readability */
+  background-color: #f0f2f5; /* Light stone gray, easy on the eyes */
+  color: #3a3a3a; /* Dark gray text for readability */
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden;
 }
 
-/* Navbar with Nature-Themed Gradient */
+/* Navbar Styling with Bold Earthy Tones */
 nav {
-  background: linear-gradient(to right, #6dbf72, #3d8b38); /* Nature-inspired greens */
+  background: linear-gradient(to right, #4b7f45, #91b88a); /* Deep forest green to lighter green gradient */
   color: white;
-  padding: 20px 40px;
+  padding: 25px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 5px solid #4c7c37; /* Deep green border */
+  border-bottom: 5px solid #335533; /* Deeper green to contrast */
   position: relative;
-  border-radius: 0 0 25px 25px; /* Rounded corners for a more natural feel */
+  border-radius: 0 0 30px 30px;
 }
 
-/* Smooth wave for navbar */
+/* Add a natural wood grain texture to navbar */
+nav {
+  background-image: url('images/wood-grain.jpg'); /* Add a wood-grain image if you want a rustic touch */
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: rgba(75, 127, 69, 0.8); /* Semi-transparent green for text contrast */
+}
+
 nav::after {
   content: '';
   display: block;
@@ -49,7 +56,7 @@ nav a {
   color: white;
   text-decoration: none;
   font-size: 1.1rem;
-  padding: 8px 12px;
+  padding: 8px 15px;
   border-radius: 8px;
   position: relative;
   transition: color 0.3s ease, transform 0.2s ease;
@@ -57,91 +64,84 @@ nav a {
 
 /* Hover effect for navbar links */
 nav a:hover {
-  color: #d9d9d9;
-  transform: translateY(-4px);
+  color: #ffe27a; /* Golden-yellow accent color for a natural look */
+  transform: translateY(-5px);
 }
 
-nav a:hover::before {
-  content: '';
-  position: absolute;
-  background-color: #fff;
-  height: 2px;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-}
-
-/* Main Section Style */
+/* Main Section Styling */
 section {
   padding: 50px;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 40px auto;
   background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-image: url('images/wood-texture.jpg'); /* Subtle nature-inspired texture */
+  background-image: url('images/leaf-pattern.jpg'); /* Subtle leaf texture in the background */
   background-size: cover;
   background-position: center;
 }
 
-/* Hover effect on sections for interactivity */
+/* Hover effect on sections */
 section:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* Heading Styling */
+/* Section Titles */
 h2 {
-  color: #6dbf72; /* Soft nature green */
-  font-size: 2.2rem;
+  color: #4b7f45; /* Darker green from navbar for continuity */
+  font-size: 2.5rem;
   text-align: center;
   margin-bottom: 25px;
-  text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 1px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
+/* Subsection Titles */
 h3 {
-  color: #3d8b38; /* Darker green for subheadings */
-  font-size: 1.6rem;
+  color: #91b88a; /* Lighter green for contrast */
+  font-size: 1.7rem;
   margin-bottom: 15px;
   letter-spacing: 1px;
 }
 
+/* General Text Styling */
 p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #5a5a5a;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #4a4a4a;
+  padding: 10px 0;
 }
 
-/* Button Style */
+/* Button Styling */
 .button {
   display: inline-block;
-  background-color: #6dbf72; /* Earthy green */
+  background-color: #6caa4f; /* Nature-inspired green */
   color: white;
-  padding: 12px 24px;
+  padding: 14px 30px;
   text-decoration: none;
   border-radius: 30px;
   font-weight: bold;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease, transform 0.2s ease;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 /* Button Hover Effect */
 .button:hover {
-  background-color: #4e9a49;
+  background-color: #4b7f45;
   transform: scale(1.05);
 }
 
-/* Gallery Styling */
+/* Gallery Section with a Wildlife Focus */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 25px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .gallery-grid img {
@@ -149,11 +149,11 @@ p {
   height: auto;
   border-radius: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 5px solid #6dbf72; /* Green border for gallery images */
+  border: 5px solid #6caa4f; /* Green border around gallery images */
 }
 
 .gallery-grid img:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -161,29 +161,29 @@ p {
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 
 .contact-form input,
 .contact-form textarea {
-  padding: 12px;
-  border: 2px solid #6dbf72;
-  border-radius: 12px;
+  padding: 15px;
+  border: 2px solid #6caa4f;
+  border-radius: 15px;
   font-size: 1rem;
-  background-color: #f0f0f0;
+  background-color: #f7f7f7;
   transition: border-color 0.3s ease;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #3d8b38;
+  border-color: #4b7f45;
   outline: none;
 }
 
 /* Contact Form Submit Button */
 .contact-form button {
-  padding: 14px 25px;
-  background-color: #6dbf72;
+  padding: 16px 28px;
+  background-color: #6caa4f;
   color: white;
   font-weight: bold;
   border-radius: 30px;
@@ -193,6 +193,6 @@ p {
 }
 
 .contact-form button:hover {
-  background-color: #4e9a49;
+  background-color: #4b7f45;
   transform: scale(1.05);
 }
