@@ -1,17 +1,24 @@
 /* Global Styles */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8f1e7; /* Soft cream background */
-  color: #4b4a49; /* Dark gray for text to keep it readable */
+  font-family: 'Lora', serif; /* Elegant but not too boring */
+  background-color: #fef8f1; /* Cream background for a soft, elegant vibe */
+  color: #4e4e4e; /* Soft dark gray for text */
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow-x: hidden; /* Hide horizontal overflow */
 }
 
-/* Navbar Styling */
+/* Navbar with Curved, Unique Shape */
 nav {
-  background: linear-gradient(to right, #f3c1d8, #a3b8a4); /* Millennial pink to sage green gradient */
+  background: linear-gradient(135deg, #f7a1c7, #b7d8a3); /* Millennial pink to sage green gradient */
   color: white;
-  padding: 25px 50px;
+  padding: 30px 50px;
   display: flex;
-  justify-content: space
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-bottom: 8px solid #e1c9b7; /* Soft cream color border */
+  border-radius: 50px 50px 0 0;
+}
+
+/* Custom
