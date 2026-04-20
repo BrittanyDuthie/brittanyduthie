@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Activities</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+  <h1>Your Name</h1>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="biography.html">Biography</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="activities.html">Activities</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section>
+  <h2>Professional Activities</h2>
+
+  <h3>Field Work</h3>
+  <p>Describe your wildlife field experience here.</p>
+
+  <h3>Volunteer Work</h3>
+  <p>Describe conservation or environmental volunteering.</p>
+
+  <h3>Workshops / Training</h3>
+  <p>Any courses, certifications, or training you’ve done.</p>
+
+</section>
+
+</body>
+</html>
