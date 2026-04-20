@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Biography</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+  <h1>Brittany</h1>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="biography.html">Biography</a></li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="activities.html">Activities</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<section>
+  <h2>Professional Biography</h2>
+  <p>Write your professional bio here.</p>
+</section>
+
+</body>
+</html>
